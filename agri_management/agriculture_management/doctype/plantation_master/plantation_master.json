@@ -1,0 +1,147 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-04 14:05:46.117514",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "farm_details_section",
+  "farm_master",
+  "village",
+  "soil_type",
+  "column_break_kupj",
+  "farmer_name",
+  "district",
+  "farm_area_in_acres",
+  "crop_details_section",
+  "crop_master",
+  "crop_variety",
+  "column_break_tyam",
+  "crop_name",
+  "maturity_period_in_days",
+  "plantation_details_section",
+  "plantation_date",
+  "fertilizer_plan"
+ ],
+ "fields": [
+  {
+   "fieldname": "farm_master",
+   "fieldtype": "Link",
+   "label": "Farm Master",
+   "options": "Farm Master"
+  },
+  {
+   "fetch_from": "farm_master.farmer_name",
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fetch_from": "farm_master.village",
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fetch_from": "farm_master.district",
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fetch_from": "farm_master.farm_area_in_acres",
+   "fieldname": "farm_area_in_acres",
+   "fieldtype": "Data",
+   "label": "Farm Area in Acres"
+  },
+  {
+   "fetch_from": "farm_master.soil_type",
+   "fieldname": "soil_type",
+   "fieldtype": "Data",
+   "label": "Soil Type\t"
+  },
+  {
+   "fieldname": "farm_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farm Details"
+  },
+  {
+   "fieldname": "column_break_kupj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "crop_details_section",
+   "fieldtype": "Section Break",
+   "label": "Crop Details"
+  },
+  {
+   "fieldname": "column_break_tyam",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "crop_master.crop_variety",
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fetch_from": "crop_master.crop_name",
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fetch_from": "crop_master.maturity_period_in_days",
+   "fieldname": "maturity_period_in_days",
+   "fieldtype": "Data",
+   "label": "Maturity Period in Days"
+  },
+  {
+   "fieldname": "crop_master",
+   "fieldtype": "Link",
+   "label": "Crop Master",
+   "options": "Crop Master"
+  },
+  {
+   "fieldname": "plantation_date",
+   "fieldtype": "Date",
+   "label": "Plantation Date"
+  },
+  {
+   "fieldname": "plantation_details_section",
+   "fieldtype": "Section Break",
+   "label": "Plantation Details"
+  },
+  {
+   "fieldname": "fertilizer_plan",
+   "fieldtype": "Table",
+   "label": "Fertilizer Calculation",
+   "options": "Fertilizer Plan"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-04 15:18:39.703686",
+ "modified_by": "Administrator",
+ "module": "Agriculture Management",
+ "name": "Plantation Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

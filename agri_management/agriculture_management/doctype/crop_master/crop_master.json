@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{crop_name}-{crop_variety}",
+ "creation": "2025-06-04 13:37:32.661895",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "crop_name",
+  "crop_variety",
+  "maturity_period_in_days",
+  "section_break_nruu",
+  "fertilizer_suggestion"
+ ],
+ "fields": [
+  {
+   "fieldname": "crop_name",
+   "fieldtype": "Data",
+   "label": "Crop Name"
+  },
+  {
+   "fieldname": "crop_variety",
+   "fieldtype": "Data",
+   "label": "Crop Variety"
+  },
+  {
+   "fieldname": "maturity_period_in_days",
+   "fieldtype": "Int",
+   "label": "Maturity Period in Days"
+  },
+  {
+   "fieldname": "section_break_nruu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "fertilizer_suggestion",
+   "fieldtype": "Table",
+   "label": "Fertilizer Suggestion for 1 Acre",
+   "options": "Fertilizer Plan"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-04 15:32:33.108039",
+ "modified_by": "Administrator",
+ "module": "Agriculture Management",
+ "name": "Crop Master",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-06-04 13:40:03.193507",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "dose",
+  "int_xekf",
+  "suggested_date",
+  "fertilizer_name",
+  "quantity",
+  "units_of_measure"
+ ],
+ "fields": [
+  {
+   "fieldname": "dose",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Dose"
+  },
+  {
+   "fieldname": "int_xekf",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Days"
+  },
+  {
+   "fieldname": "fertilizer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Fertilizer Name"
+  },
+  {
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "units_of_measure",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Units of Measure"
+  },
+  {
+   "fieldname": "suggested_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Suggested Date"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-06-04 15:21:46.145310",
+ "modified_by": "Administrator",
+ "module": "Agriculture Management",
+ "name": "Fertilizer Plan",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

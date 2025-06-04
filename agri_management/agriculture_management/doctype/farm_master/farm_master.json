@@ -1,0 +1,112 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:survey_no",
+ "creation": "2025-06-04 13:17:09.665333",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "farm_details_section",
+  "survey_no",
+  "village",
+  "district",
+  "farm_area_in_acres",
+  "column_break_ggjl",
+  "soil_type",
+  "irrigation_method",
+  "farmer_details_section",
+  "farmer_name",
+  "location_section",
+  "farm_location"
+ ],
+ "fields": [
+  {
+   "fieldname": "survey_no",
+   "fieldtype": "Data",
+   "label": "Survey No",
+   "unique": 1
+  },
+  {
+   "fieldname": "farmer_name",
+   "fieldtype": "Data",
+   "label": "Farmer Name"
+  },
+  {
+   "fieldname": "village",
+   "fieldtype": "Data",
+   "label": "Village"
+  },
+  {
+   "fieldname": "district",
+   "fieldtype": "Data",
+   "label": "District"
+  },
+  {
+   "fieldname": "farm_area_in_acres",
+   "fieldtype": "Float",
+   "label": "Farm Area in Acres"
+  },
+  {
+   "fieldname": "soil_type",
+   "fieldtype": "Select",
+   "label": "Soil Type",
+   "options": "\nBlack\nRed\nGrey"
+  },
+  {
+   "fieldname": "irrigation_method",
+   "fieldtype": "Select",
+   "label": "Irrigation Method",
+   "options": "\nRiver\nBorewell\nOther"
+  },
+  {
+   "fieldname": "column_break_ggjl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "farm_location",
+   "fieldtype": "Geolocation",
+   "label": "Farm location"
+  },
+  {
+   "fieldname": "farm_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farm Details"
+  },
+  {
+   "fieldname": "location_section",
+   "fieldtype": "Section Break",
+   "label": "Location"
+  },
+  {
+   "fieldname": "farmer_details_section",
+   "fieldtype": "Section Break",
+   "label": "Farmer Details"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-06-04 14:15:59.732905",
+ "modified_by": "Administrator",
+ "module": "Agriculture Management",
+ "name": "Farm Master",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
