@@ -7,7 +7,7 @@
  "engine": "InnoDB",
  "field_order": [
   "dose",
-  "int_xekf",
+  "days",
   "suggested_date",
   "fertilizer_name",
   "quantity",
@@ -19,12 +19,6 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Dose"
-  },
-  {
-   "fieldname": "int_xekf",
-   "fieldtype": "Int",
-   "in_list_view": 1,
-   "label": "Days"
   },
   {
    "fieldname": "fertilizer_name",
@@ -49,13 +43,19 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Suggested Date"
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Days"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-06-04 15:21:46.145310",
+ "modified": "2025-06-04 15:51:08.922851",
  "modified_by": "Administrator",
  "module": "Agriculture Management",
  "name": "Fertilizer Plan",
