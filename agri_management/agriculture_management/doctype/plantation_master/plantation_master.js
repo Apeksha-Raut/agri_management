@@ -2,6 +2,30 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Plantation Master", {
+  refresh: function (frm) {
+    if (!frm.is_new()) {
+      frm.add_custom_button("Generate Fertilizer Events", () => {
+        frappe.call({
+          method:
+            "agri_management.agriculture_management.doctype.plantation_master.plantation_master.create_fertilizer_events",
+          args: {
+            plantation: frm.doc.name,
+          },
+          callback: function (r) {
+            if (!r.exc) {
+              console.log("Fertilizer Events created successfully:", r.message);
+              frappe.msgprint({
+                title: "Fertilizer Events Created",
+                message:
+                  "Fertilizer Events have been successfully generated. Please go to the Fertilizer Event list to view them.",
+                indicator: "green",
+              });
+            }
+          },
+        });
+      });
+    }
+  },
   crop_master: function (frm) {
     if (frm.doc.crop_master) {
       console.log("Crop Master selected:", frm.doc.crop_master);

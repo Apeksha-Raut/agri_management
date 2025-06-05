@@ -29,7 +29,7 @@
   {
    "fieldname": "farm_master",
    "fieldtype": "Link",
-   "label": "Farm Master",
+   "label": "Farm",
    "options": "Farm Master"
   },
   {
@@ -101,7 +101,7 @@
   {
    "fieldname": "crop_master",
    "fieldtype": "Link",
-   "label": "Crop Master",
+   "label": "Crop",
    "options": "Crop Master"
   },
   {
@@ -131,7 +131,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-04 16:46:12.921555",
+ "modified": "2025-06-05 10:50:48.635745",
  "modified_by": "Administrator",
  "module": "Agriculture Management",
  "name": "Plantation Master",

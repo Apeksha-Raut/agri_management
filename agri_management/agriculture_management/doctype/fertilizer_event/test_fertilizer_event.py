@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestFertilizerSchedule(FrappeTestCase):
+class TestFertilizerEvent(FrappeTestCase):
 	pass
