@@ -1,7 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "naming_series:PLNT-.####",
+ "autoname": "format:PLNT-{farm_master}-{crop_master}",
  "creation": "2025-06-04 14:05:46.117514",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -29,38 +29,45 @@
   {
    "fieldname": "farm_master",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Farm",
-   "options": "Farm Master"
+   "options": "Farm Master",
+   "reqd": 1
   },
   {
    "fetch_from": "farm_master.farmer_name",
    "fieldname": "farmer_name",
    "fieldtype": "Data",
-   "label": "Farmer Name"
+   "label": "Farmer Name",
+   "read_only": 1
   },
   {
    "fetch_from": "farm_master.village",
    "fieldname": "village",
    "fieldtype": "Data",
-   "label": "Village"
+   "label": "Village",
+   "read_only": 1
   },
   {
    "fetch_from": "farm_master.district",
    "fieldname": "district",
    "fieldtype": "Data",
-   "label": "District"
+   "label": "District",
+   "read_only": 1
   },
   {
    "fetch_from": "farm_master.farm_area_in_acres",
    "fieldname": "farm_area_in_acres",
    "fieldtype": "Data",
-   "label": "Farm Area in Acres"
+   "label": "Farm Area in Acres",
+   "read_only": 1
   },
   {
    "fetch_from": "farm_master.soil_type",
    "fieldname": "soil_type",
    "fieldtype": "Data",
-   "label": "Soil Type\t"
+   "label": "Soil Type\t",
+   "read_only": 1
   },
   {
    "fieldname": "farm_details_section",
@@ -84,30 +91,37 @@
    "fetch_from": "crop_master.crop_variety",
    "fieldname": "crop_variety",
    "fieldtype": "Data",
-   "label": "Crop Variety"
+   "label": "Crop Variety",
+   "read_only": 1
   },
   {
    "fetch_from": "crop_master.crop_name",
    "fieldname": "crop_name",
    "fieldtype": "Data",
-   "label": "Crop Name"
+   "label": "Crop Name",
+   "read_only": 1
   },
   {
    "fetch_from": "crop_master.maturity_period_in_days",
    "fieldname": "maturity_period_in_days",
    "fieldtype": "Data",
-   "label": "Maturity Period in Days"
+   "label": "Maturity Period in Days",
+   "read_only": 1
   },
   {
    "fieldname": "crop_master",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Crop",
-   "options": "Crop Master"
+   "options": "Crop Master",
+   "reqd": 1
   },
   {
    "fieldname": "plantation_date",
    "fieldtype": "Date",
-   "label": "Plantation Date"
+   "in_list_view": 1,
+   "label": "Plantation Date",
+   "reqd": 1
   },
   {
    "fieldname": "plantation_details_section",
@@ -118,12 +132,14 @@
    "fieldname": "fertilizer_plan",
    "fieldtype": "Table",
    "label": "Fertilizer Calculation",
-   "options": "Fertilizer Plan"
+   "options": "Fertilizer Plan",
+   "read_only": 1
   },
   {
    "default": "PLNT-.####",
    "fieldname": "naming_series",
    "fieldtype": "Select",
+   "hidden": 1,
    "label": "naming_series",
    "options": "PLNT-.####"
   }
@@ -131,11 +147,11 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-06-05 10:50:48.635745",
+ "modified": "2025-06-06 11:38:01.996483",
  "modified_by": "Administrator",
  "module": "Agriculture Management",
  "name": "Plantation Master",
- "naming_rule": "By \"Naming Series\" field",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {

@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"pIvmSRfP-i\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Agriculture Management</span>\",\"col\":12}},{\"id\":\"DU-SszPwqe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Farm\",\"col\":3}},{\"id\":\"sx92ggeqK6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Crop\",\"col\":3}},{\"id\":\"Mnogppvs9X\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"kBZfstnJV1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Plantation\",\"col\":3}},{\"id\":\"02LRW9khms\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fertilizer Event Calendar View\",\"col\":3}}]",
+ "content": "[{\"id\":\"pIvmSRfP-i\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Agriculture Management</span>\",\"col\":12}},{\"id\":\"DU-SszPwqe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Farm\",\"col\":3}},{\"id\":\"sx92ggeqK6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Crop\",\"col\":3}},{\"id\":\"kBZfstnJV1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Plantation\",\"col\":3}},{\"id\":\"Mnogppvs9X\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"hhKiWOqp69\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fertilizer Event\",\"col\":3}},{\"id\":\"02LRW9khms\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fertilizer Event Calendar View\",\"col\":3}}]",
  "creation": "2025-06-06 11:06:36.079137",
  "custom_blocks": [],
  "docstatus": 0,
@@ -12,7 +12,7 @@
  "is_hidden": 0,
  "label": "Agriculture Management",
  "links": [],
- "modified": "2025-06-06 11:16:24.233442",
+ "modified": "2025-06-06 11:24:45.246745",
  "modified_by": "Administrator",
  "module": "Agriculture Management",
  "name": "Agriculture Management",
@@ -30,6 +30,14 @@
    "label": "Fertilizer Event Calendar View",
    "type": "URL",
    "url": "/app/fertilizer-event/view/calendar/default"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Fertilizer Event",
+   "link_to": "Fertilizer Event",
+   "stats_filter": "[]",
+   "type": "DocType"
   },
   {
    "color": "Grey",
