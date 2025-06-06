@@ -8,6 +8,10 @@ frappe.ui.form.on("Plantation Master", {
       frm.add_custom_button("Generate Fertilizer Events", () => {
         generate_fertilizer_events(frm);
       });
+      // Add custom button to go to the Fertilizer Event List
+      frm.add_custom_button("Go To Fertilizer Event List", () => {
+        frappe.set_route("List", "Fertilizer Event");
+      });
     }
   },
 
