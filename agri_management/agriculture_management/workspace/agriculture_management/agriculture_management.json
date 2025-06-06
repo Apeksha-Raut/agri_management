@@ -1,0 +1,60 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"pIvmSRfP-i\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Agriculture Management</span>\",\"col\":12}},{\"id\":\"DU-SszPwqe\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Farm\",\"col\":3}},{\"id\":\"sx92ggeqK6\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Crop\",\"col\":3}},{\"id\":\"Mnogppvs9X\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"kBZfstnJV1\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Plantation\",\"col\":3}},{\"id\":\"02LRW9khms\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Fertilizer Event Calendar View\",\"col\":3}}]",
+ "creation": "2025-06-06 11:06:36.079137",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Agriculture Management",
+ "links": [],
+ "modified": "2025-06-06 11:16:24.233442",
+ "modified_by": "Administrator",
+ "module": "Agriculture Management",
+ "name": "Agriculture Management",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 73.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Fertilizer Event Calendar View",
+   "type": "URL",
+   "url": "/app/fertilizer-event/view/calendar/default"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Farm",
+   "link_to": "Farm Master",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Crop",
+   "link_to": "Crop Master",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Plantation",
+   "link_to": "Plantation Master",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Agriculture Management"
+}
